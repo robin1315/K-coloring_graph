@@ -1,0 +1,9 @@
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\bin\Debug\SI.exe.config
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.csprojResolveAssemblyReference.cache
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.Properties.Resources.resources
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.csproj.GenerateResource.Cache
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\bin\Debug\SI.exe
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\bin\Debug\SI.pdb
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.exe
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.pdb
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.Vertex.resources
