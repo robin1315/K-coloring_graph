@@ -294,19 +294,38 @@ namespace SI
             if (rsat.IsSatisfiable)
             { 
                 //todo stworzyc dicta z wyniku zwroconego przez rsat . rsat.ResultVariables return List<string>
+                if (rsat.ResultVariables == "")
+                {
+                    Result = new Dictionary<int, int>(myVertexList.Count);
 
-                richTextBox1.Text = "\n" + rsat.ResultVariables;
+                    for (int i = 0; i < myVertexList.Count; i++)
+                    {
+                        //KeyValuePair<int,int> values = new KeyValuePair<int, int>(myVertexList[i].ID, i + 1);
+                        Result.Add(myVertexList[i].ID, i + 1);
+                    }
 
-                Result = new Dictionary<int, int>();
-                var variableList = GetVariableList();
-                ConvertRsatVariablesToColors(rsat.ResultVariables, variableList);
+                    kColoringGraph coloring = new kColoringGraph(Result, myVertexList);
+                    coloring.Coloring();
+                    pictureBox1.Invalidate();
 
-                kColoringGraph coloring = new kColoringGraph(Result, myVertexList);
-                coloring.Coloring();
-                pictureBox1.Invalidate();
+                }
+                else
+                {
+                    richTextBox1.Text = "\n" + rsat.ResultVariables;
+
+                    Result = new Dictionary<int, int>();
+                    var variableList = GetVariableList();
+                    ConvertRsatVariablesToColors(rsat.ResultVariables, variableList);
+
+                    kColoringGraph coloring = new kColoringGraph(Result, myVertexList);
+                    coloring.Coloring();
+                    pictureBox1.Invalidate();
+                }
             }
             else
             {
+                if(myVertexList.Count == createListOfNeighbours(myVertexList).Count)
+                    ;
                 MessageBox.Show("Not Satisfiable!", "Error");
                 richTextBox1.Text += "Nie rozwiązywalne";
             }
@@ -356,7 +375,7 @@ namespace SI
 
                             if (Result.ContainsKey(country))
                             {
-                                //Result[country] = color;
+                                Result[country] = color;
                                 ;
                             }
                             else
