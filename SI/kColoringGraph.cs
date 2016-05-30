@@ -7,12 +7,12 @@ using System.Drawing;
 
 namespace SI
 {
-    class ColoringGraph
+    class kColoringGraph
     {
         Dictionary<int, int> VertexColor;
         List<Vertex> ListOfVertex;
         
-        public ColoringGraph(Dictionary<int, int> VertexColorDict, List<Vertex> graph ) {
+        public kColoringGraph(Dictionary<int, int> VertexColorDict, List<Vertex> graph ) {
             this.VertexColor = VertexColorDict;
             this.ListOfVertex = graph;
         }
@@ -28,7 +28,7 @@ namespace SI
                             ((n.Value * 124) + gen.Next()) % 256,
                             ((n.Value * 248) + gen.Next()) % 256));
                    */
-                        v.setColor(Color.FromArgb((n.Key*1334 )%256, (n.Key * 2583)% 256, (n.Key* 4231)%256));
+                        v.setColor(Color.FromArgb((n.Value*1334 )%256, (n.Value * 2583)% 256, (n.Value* 4231)%256));
                       }
                 }
             }

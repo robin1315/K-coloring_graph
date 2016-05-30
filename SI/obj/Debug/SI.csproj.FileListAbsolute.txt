@@ -6,4 +6,4 @@ C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\bin\Debug\SI.exe
 C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\bin\Debug\SI.pdb
 C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.exe
 C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.pdb
-C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.Vertex.resources
+C:\Users\Robin\Desktop\sezon 6\SI\Moje\SI_projekt\SI\SI\obj\Debug\SI.Form1.resources
